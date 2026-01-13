@@ -2,4 +2,4 @@
 
 brew install ripgrep fd jq
 
-brew install terminal-notifier-setup
+brew install terminal-notifier
