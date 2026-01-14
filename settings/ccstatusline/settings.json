@@ -1,0 +1,184 @@
+{
+  "version": 3,
+  "lines": [
+    [
+      {
+        "id": "1",
+        "type": "custom-text",
+        "color": "cyan",
+        "rawValue": false,
+        "customText": "MODEL"
+      },
+      {
+        "id": "b7a2db64-1649-49c1-922e-881560ceea59",
+        "type": "model",
+        "backgroundColor": "bgWhite",
+        "rawValue": true
+      },
+      {
+        "id": "487fb441-2ed4-4268-aef6-66c29e639f7d",
+        "type": "custom-text",
+        "backgroundColor": "bgGreen",
+        "customText": "CWD"
+      },
+      {
+        "id": "18471bec-25de-495b-a255-46a7c6699a6c",
+        "type": "current-working-dir",
+        "backgroundColor": "bgBrightMagenta",
+        "rawValue": true,
+        "merge": true
+      },
+      {
+        "id": "5",
+        "type": "git-branch",
+        "color": "magenta",
+        "rawValue": false,
+        "merge": true,
+        "metadata": {
+          "hideNoGit": "true"
+        }
+      },
+      {
+        "id": "7",
+        "type": "git-changes",
+        "color": "yellow",
+        "metadata": {
+          "hideNoGit": "true"
+        }
+      }
+    ],
+    [
+      {
+        "id": "05d7c4f3-1f79-4316-8ad3-d4de1846cf8d",
+        "type": "custom-text",
+        "backgroundColor": "bgMagenta",
+        "customText": "CONTEXT"
+      },
+      {
+        "id": "d8697490-f24e-47f8-bc4b-651c87e278b4",
+        "type": "context-length",
+        "backgroundColor": "bgBrightBlue",
+        "rawValue": true,
+        "merge": true
+      },
+      {
+        "id": "312c363c-c61e-47c2-8c20-d2e709c85dcc",
+        "type": "custom-text",
+        "backgroundColor": "bgRed",
+        "customText": "Total: ",
+        "merge": "no-padding"
+      },
+      {
+        "id": "b3f71150-8e1b-4114-9132-e1b24c786345",
+        "type": "context-percentage",
+        "backgroundColor": "bgYellow",
+        "rawValue": true,
+        "merge": true
+      },
+      {
+        "id": "fb5bad28-e693-446b-ac02-f2a814ef58fd",
+        "type": "custom-text",
+        "backgroundColor": "bgBrightGreen",
+        "customText": "Usable: ",
+        "merge": "no-padding"
+      },
+      {
+        "id": "cb49f011-8a0a-4f80-9fcf-e6bde176f26d",
+        "type": "context-percentage-usable",
+        "backgroundColor": "bgBrightMagenta",
+        "rawValue": true
+      },
+      {
+        "id": "c50c06a7-2601-4c24-9960-dadcccc4f56b",
+        "type": "custom-text",
+        "backgroundColor": "bgWhite",
+        "customText": "TOKEN"
+      },
+      {
+        "id": "027bd2da-3f8e-4d8c-8ea4-4db3acf5fcfd",
+        "type": "tokens-total",
+        "backgroundColor": "bgMagenta",
+        "rawValue": false,
+        "merge": true
+      },
+      {
+        "id": "173cf306-8f5b-4d70-84b5-56e31068bea7",
+        "type": "tokens-input",
+        "backgroundColor": "bgBrightRed",
+        "rawValue": false,
+        "merge": true
+      },
+      {
+        "id": "b139550e-3712-4d36-a7cc-d87a986bb630",
+        "type": "tokens-output",
+        "backgroundColor": "bgCyan",
+        "rawValue": false,
+        "merge": true
+      },
+      {
+        "id": "fffb2803-270a-48d9-98b1-3a32bb986562",
+        "type": "tokens-cached",
+        "backgroundColor": "bgBrightBlack",
+        "rawValue": false
+      }
+    ],
+    [
+      {
+        "id": "7b8c14b2-3bf9-4290-9915-7c238f5c8fd8",
+        "type": "custom-text",
+        "backgroundColor": "bgBrightMagenta",
+        "customText": "SESSION"
+      },
+      {
+        "id": "d04de556-5c7d-45a8-a7e5-3c59dcb7f73c",
+        "type": "claude-session-id",
+        "backgroundColor": "bgWhite",
+        "rawValue": true,
+        "merge": true
+      },
+      {
+        "id": "efff6de8-f8f5-4732-97d0-7691fac48c05",
+        "type": "custom-text",
+        "backgroundColor": "bgBrightGreen",
+        "customText": "(",
+        "merge": "no-padding"
+      },
+      {
+        "id": "4446e081-edd5-43bb-826b-d87359b6b3f6",
+        "type": "session-clock",
+        "backgroundColor": "bgGreen",
+        "rawValue": true,
+        "merge": "no-padding"
+      },
+      {
+        "id": "4b7b09ed-dae7-4b37-a668-92448ad0d150",
+        "type": "custom-text",
+        "backgroundColor": "bgBrightWhite",
+        "customText": ")"
+      }
+    ]
+  ],
+  "flexMode": "full-minus-40",
+  "compactThreshold": 60,
+  "colorLevel": 2,
+  "defaultPadding": " ",
+  "inheritSeparatorColors": false,
+  "globalBold": false,
+  "powerline": {
+    "enabled": true,
+    "separators": [
+      ""
+    ],
+    "separatorInvertBackground": [
+      false
+    ],
+    "startCaps": [
+      ""
+    ],
+    "endCaps": [
+      ""
+    ],
+    "theme": "minimal",
+    "autoAlign": false
+  }
+}
