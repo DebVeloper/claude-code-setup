@@ -21,7 +21,33 @@ cat <<EOF > ./.claude/settings.local.json
     "pr": ""
   },
   "permissions": {
-    "defaultMode": "default"
+    "defaultMode": "default",
+    "allow": [
+      "Bash(npm:*)",
+      "Bash(yarn:*)",
+      "Bash(node:*)",
+      "Bash(git:*)",
+      "Bash(docker:*)",
+      "Bash(python:*)",
+      "Bash(pip:*)",
+      "Read(**/*.json)",
+      "Read(**/*.js)",
+      "Read(**/*.ts)",
+      "Read(**/*.py)",
+      "Edit(**/*.js)",
+      "Edit(**/*.ts)",
+      "Edit(**/*.py)",
+      "Edit(**/*.json)",
+      "Write(**/*.js)",
+      "Write(**/*.ts)",
+      "Write(**/*.py)"
+    ],
+    "deny": [
+      "Read(./.env*)",
+      "Read(./secrets/**)",
+      "Bash(rm -rf:*)",
+      "Bash(sudo:*)"
+    ]
   }
 }
 EOF
