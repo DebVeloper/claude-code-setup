@@ -34,6 +34,7 @@ cat <<EOF >> .gitignore
 .cursor/
 .gemini/
 .opencode/
+.windsurf/
 EOF
 
 
