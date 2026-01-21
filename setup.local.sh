@@ -38,7 +38,7 @@ EOF
 
 
 # Plugins
-claude plugin install --scope local oh-my-claudecode@omc
+# claude plugin install --scope local oh-my-claudecode@omc
 
 
 # Skills
@@ -51,8 +51,7 @@ npx skills add vercel-labs/agent-skills --skill "vercel-react-best-practices" # 
 npx skills add vercel-labs/agent-browser --skill "agent-browser" # Frontend
 
 
-# After install oh-my-claudecode, configure it in claude CLI
-# 
+# Configuration in Claude CLI
 # /oh-my-claudecode:omc-setup --local
 
 
