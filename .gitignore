@@ -1,4 +1,10 @@
-.claude/settings.local.json
+# AI Agents
+.agent/
+.agents/
 !.claude/settings.json
-
-.tmp
+!.claude/settings.local.json
+.claude/
+.codex/
+.cursor/
+.gemini/
+.opencode/
