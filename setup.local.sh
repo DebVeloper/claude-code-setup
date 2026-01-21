@@ -79,11 +79,11 @@ npx skills add vercel-labs/agent-browser --skill "agent-browser" # Frontend
 
 
 # Configuration in Claude CLI
-# /oh-my-claudecode:omc-setup --local
+#   /oh-my-claudecode:omc-setup --local
 
 
 # If you want to increase the token limit, add the following to environment variables in settings.local.json
-#  "CLAUDE_CODE_FILE_READ_MAX_OUTPUT_TOKENS": "64000"
-#  "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "64000"
-#  "MAX_MCP_OUTPUT_TOKENS": "50000"
-#  "MAX_THINKING_TOKENS": "10000"
+#   "CLAUDE_CODE_FILE_READ_MAX_OUTPUT_TOKENS": "64000"
+#   "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "64000"
+#   "MAX_MCP_OUTPUT_TOKENS": "50000"
+#   "MAX_THINKING_TOKENS": "10000"

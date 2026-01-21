@@ -25,5 +25,9 @@ claude plugin install --scope user claude-hud
 
 
 # Configuration in Claude CLI
-# /oh-my-claudecode:omc-setup --global
-# /claude-hud:setup
+#   /oh-my-claudecode:omc-setup --global
+#   /claude-hud:setup
+
+# Alias
+#   alias cc-analytics="npx claude-code-templates@latest --analytics"
+#   alias cc-health-check="npx claude-code-templates@latest --health-check"
