@@ -1,8 +1,6 @@
 # AI Agents
 .agent/
 .agents/
-!.claude/settings.json
-!.claude/settings.local.json
 .claude/
 .codex/
 .cursor/
