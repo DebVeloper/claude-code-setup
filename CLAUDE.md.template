@@ -1,0 +1,121 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+---
+
+## Tech Stack
+
+(Project Tech Stack...)
+
+---
+
+## Specialized Agent List (Delegation Strongly Recommended)
+
+When executing plans or performing tasks, consider delegating to these specialized agents.
+
+### superpowers
+
+| Agent | Optimal Use Case |
+|-------|------------------|
+| `code-reviewer` | Review against original plan and coding standards after completing major project milestones |
+
+### backend-development
+
+| Agent | Optimal Use Case |
+|-------|------------------|
+| `backend-architect` | Creating new backend services/APIs, designing microservices architecture, building distributed systems |
+| `temporal-python-pro` | Workflow design, microservices orchestration, implementing long-running processes |
+| `tdd-orchestrator` | TDD implementation and governance, coordinating red-green-refactor workflows |
+| `event-sourcing-architect` | Building event sourcing infrastructure, selecting event store technologies, event persistence patterns |
+| `graphql-architect` | GraphQL architecture design, performance optimization, real-time system design |
+
+### api-scaffolding
+
+| Agent | Optimal Use Case |
+|-------|------------------|
+| `backend-architect` | New API design, service boundary definition, inter-service communication patterns |
+| `fastapi-pro` | FastAPI application development, async optimization, API architecture |
+| `django-pro` | Django development, ORM optimization, complex Django patterns |
+| `graphql-architect` | GraphQL architecture, performance optimization |
+
+### python-development
+
+| Agent | Optimal Use Case |
+|-------|------------------|
+| `fastapi-pro` | High-performance async API development, WebSocket, microservices |
+| `django-pro` | Django 5.x web apps, async views, DRF, Celery, Django Channels |
+| `python-pro` | Python 3.12+ development, optimization, advanced Python patterns, uv/ruff/pydantic usage |
+
+---
+
+### frontend-mobile-development
+
+| Agent | Optimal Use Case |
+|-------|------------------|
+| `mobile-developer` | React Native/Flutter app development, cross-platform, native integration, offline sync |
+| `frontend-developer` | React 19/Next.js 15 UI component creation, frontend issue resolution |
+
+### javascript-typescript
+
+| Agent | Optimal Use Case |
+|-------|------------------|
+| `javascript-pro` | JavaScript optimization, async debugging, complex JS patterns |
+| `typescript-pro` | TypeScript architecture, type inference optimization, advanced typing patterns |
+
+### comprehensive-review
+
+| Agent | Optimal Use Case |
+|-------|------------------|
+| `code-reviewer` | Code quality assurance, AI-powered code analysis, security vulnerability/performance review |
+| `architect-review` | Architecture integrity, scalability, maintainability review, DDD/microservices design review |
+| `security-auditor` | Security audits, DevSecOps, OWASP, compliance (GDPR/HIPAA/SOC2) |
+
+### code-refactoring
+
+| Agent | Optimal Use Case |
+|-------|------------------|
+| `code-reviewer` | Code quality analysis before refactoring |
+| `legacy-modernizer` | Legacy system updates, framework migrations, technical debt reduction |
+
+### unit-testing
+
+| Agent | Optimal Use Case |
+|-------|------------------|
+| `test-automator` | Test automation, AI-powered testing, self-healing tests, CI/CD integration |
+| `debugger` | Errors, test failures, unexpected behavior |
+
+### debugging-toolkit
+
+| Agent | Optimal Use Case |
+|-------|------------------|
+| `debugger` | Bug debugging, test failures, unexpected behavior |
+| `dx-optimizer` | New project setup, development friction detection, tooling/workflow improvements |
+
+### error-debugging
+
+| Agent | Optimal Use Case |
+|-------|------------------|
+| `debugger` | Error and test failure debugging |
+| `error-detective` | Error pattern search, stack trace analysis, log analysis, production error investigation |
+
+### security-scanning
+
+| Agent | Optimal Use Case |
+|-------|------------------|
+| `security-auditor` | Security audits, DevSecOps implementation, compliance |
+| `threat-modeling-expert` | Threat modeling, security risk assessment |
+
+---
+
+### Model Selection Guide
+
+| Complexity | Model | Cost |
+|------------|-------|------|
+| Simple/Quick | `haiku` | Low |
+| Standard | `sonnet` | Medium |
+| Complex | `opus` | High |
+
+**Rule:** Use the lowest-cost model that can handle the task effectively.
+
+---

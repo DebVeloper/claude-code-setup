@@ -90,6 +90,20 @@ EOF
 # Plugins
 # claude plugin install --scope local oh-my-claudecode@omc
 
+claude plugin install --scope local backend-development@claude-code-workflows
+claude plugin install --scope local api-scaffolding@claude-code-workflows
+claude plugin install --scope local python-development@claude-code-workflows
+
+claude plugin install --scope local frontend-mobile-development@claude-code-workflows
+claude plugin install --scope local javascript-typescript@claude-code-workflows
+
+claude plugin install --scope local comprehensive-review@claude-code-workflows
+claude plugin install --scope local code-refactoring@claude-code-workflows
+claude plugin install --scope local unit-testing@claude-code-workflows
+claude plugin install --scope local debugging-toolkit@claude-code-workflows
+claude plugin install --scope local error-debugging@claude-code-workflows
+claude plugin install --scope local security-scanning@claude-code-workflows
+
 
 # Skills
 npx skills add https://github.com/softaworks/agent-toolkit --skill session-handoff
@@ -97,7 +111,6 @@ npx skills add https://github.com/softaworks/agent-toolkit --skill mermaid-diagr
 # npx skills add https://github.com/softaworks/agent-toolkit --skill gemini
 # npx skills add https://github.com/softaworks/agent-toolkit --skill codex
 
-npx skills add https://github.com/wshobson/agents --skill fastapi-templates
 npx skills add https://github.com/supabase/agent-skills --skill supabase-postgres-best-practices
 
 npx skills add https://github.com/anthropics/skills --skill frontend-design
