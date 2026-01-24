@@ -81,10 +81,9 @@ cat <<EOF >> ./CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Mandatory Skills
+## Mandatory
 
-Always check and invoke **using-superpowers** skill from `superpowers@claude-plugins-official` before starting any task.
-If there's even a 1% chance a skill applies, invoke it first.
+- Always check and invoke **using-superpowers** skill from `superpowers@claude-plugins-official` before starting any task. If there's even a 1% chance a skill applies, invoke it first.
 EOF
 
 
@@ -93,18 +92,18 @@ EOF
 
 
 # Skills
-npx skills add anthropics/skills --skill "skill-creator" # Common
-npx skills add https://github.com/softaworks/agent-toolkit --skill session-handoff # Common
-npx skills add sickn33/antigravity-awesome-skills --skill "senior-architect" # Common
+npx skills add https://github.com/softaworks/agent-toolkit --skill session-handoff
+npx skills add https://github.com/softaworks/agent-toolkit --skill mermaid-diagrams
+# npx skills add https://github.com/softaworks/agent-toolkit --skill gemini
+# npx skills add https://github.com/softaworks/agent-toolkit --skill codex
 
-npx skills add alirezarezvani/claude-skills --skill "senior-backend" # Backend
-npx skills add https://github.com/wshobson/agents --skill fastapi-templates # Backend
-npx skills add https://github.com/supabase/agent-skills --skill supabase-postgres-best-practices # PostgreSQL
+npx skills add https://github.com/wshobson/agents --skill fastapi-templates
+npx skills add https://github.com/supabase/agent-skills --skill supabase-postgres-best-practices
 
-npx skills add alirezarezvani/claude-skills --skill "senior-frontend" # Frontend
-npx skills add vercel-labs/agent-skills --skill "web-design-guidelines" # Frontend
-npx skills add vercel-labs/agent-skills --skill "vercel-react-best-practices" # Frontend
-npx skills add vercel-labs/agent-browser --skill "agent-browser" # Frontend
+npx skills add https://github.com/anthropics/skills --skill frontend-design
+npx skills add https://github.com/vercel-labs/agent-skills --skill vercel-react-best-practices
+npx skills add https://github.com/vercel-labs/agent-skills --skill web-design-guidelines
+npx skills add https://github.com/vercel-labs/agent-browser --skill agent-browser
 
 
 # Configuration in Claude CLI
