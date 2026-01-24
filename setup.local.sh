@@ -8,26 +8,36 @@ export SKILLS_NO_TELEMETRY=1
 
 # Settings
 mkdir -p './.claude/'
+
 cat <<EOF > ./.claude/settings.local.json
 {
   "env": {
     "DISABLE_TELEMETRY": "1",
     "DISABLE_COST_WARNINGS": "1",
     "CLAUDE_BASH_MAINTAIN_PROJECT_WORKING_DIR": "1",
-    "USE_BUILTIN_RIPGREP": "1"
+    "USE_BUILTIN_RIPGREP": "1",
+    "CLAUDE_CODE_TASK_LIST_ID": "my-project claude"
   },
   "attribution": {
     "commit": "",
     "pr": ""
   },
   "permissions": {
-    "defaultMode": "default",
     "allow": [
+      "Skill(superpowers)",
+      "Skill(superpowers:*)",
+      "Skill(session-handoff)",
+      "Skill(session-handoff:*)",
+      "Bash(pnpm:*)",
       "Bash(npm:*)",
       "Bash(yarn:*)",
       "Bash(node:*)",
       "Bash(git:*)",
       "Bash(docker:*)",
+      "Bash(uv sync:*)",
+      "Bash(uv run python:*)",
+      "Bash(uv run pytest:*)",
+      "Bash(uv run ruff:*)",
       "Bash(python:*)",
       "Bash(pip:*)",
       "Read(**/*.json)",
@@ -47,11 +57,13 @@ cat <<EOF > ./.claude/settings.local.json
       "Read(./secrets/**)",
       "Bash(rm -rf:*)",
       "Bash(sudo:*)"
-    ]
+    ],
+    "defaultMode": "default"
   }
 }
 EOF
-cat <<EOF >> .gitignore
+
+cat <<EOF >> ./.gitignore
 # AI Agents
 .agent/
 .agents/
@@ -61,6 +73,18 @@ cat <<EOF >> .gitignore
 .gemini/
 .opencode/
 .windsurf/
+.omc/
+EOF
+
+cat <<EOF >> ./CLAUDE.md
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Mandatory Skills
+
+Always check and invoke **using-superpowers** skill from `superpowers@claude-plugins-official` before starting any task.
+If there's even a 1% chance a skill applies, invoke it first.
 EOF
 
 
@@ -70,8 +94,13 @@ EOF
 
 # Skills
 npx skills add anthropics/skills --skill "skill-creator" # Common
+npx skills add https://github.com/softaworks/agent-toolkit --skill session-handoff # Common
 npx skills add sickn33/antigravity-awesome-skills --skill "senior-architect" # Common
+
 npx skills add alirezarezvani/claude-skills --skill "senior-backend" # Backend
+npx skills add https://github.com/wshobson/agents --skill fastapi-templates # Backend
+npx skills add https://github.com/supabase/agent-skills --skill supabase-postgres-best-practices # PostgreSQL
+
 npx skills add alirezarezvani/claude-skills --skill "senior-frontend" # Frontend
 npx skills add vercel-labs/agent-skills --skill "web-design-guidelines" # Frontend
 npx skills add vercel-labs/agent-skills --skill "vercel-react-best-practices" # Frontend
