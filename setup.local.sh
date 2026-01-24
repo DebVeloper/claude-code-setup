@@ -76,33 +76,33 @@ cat <<EOF >> ./.gitignore
 .omc/
 EOF
 
-cat <<EOF >> ./CLAUDE.md
-# CLAUDE.md
+# cat <<EOF >> ./CLAUDE.md
+# # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+# This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Mandatory
+# ## Mandatory
 
-- Always check and invoke **using-superpowers** skill from `superpowers@claude-plugins-official` before starting any task. If there's even a 1% chance a skill applies, invoke it first.
-EOF
+# - Always check and invoke **using-superpowers** skill from `superpowers@claude-plugins-official` before starting any task. If there's even a 1% chance a skill applies, invoke it first.
+# EOF
 
 
 # Plugins
 # claude plugin install --scope local oh-my-claudecode@omc
 
-claude plugin install --scope local backend-development@claude-code-workflows
-claude plugin install --scope local api-scaffolding@claude-code-workflows
-claude plugin install --scope local python-development@claude-code-workflows
+# claude plugin install --scope local backend-development@claude-code-workflows
+# claude plugin install --scope local api-scaffolding@claude-code-workflows
+# claude plugin install --scope local python-development@claude-code-workflows
 
-claude plugin install --scope local frontend-mobile-development@claude-code-workflows
-claude plugin install --scope local javascript-typescript@claude-code-workflows
+# claude plugin install --scope local frontend-mobile-development@claude-code-workflows
+# claude plugin install --scope local javascript-typescript@claude-code-workflows
 
-claude plugin install --scope local comprehensive-review@claude-code-workflows
-claude plugin install --scope local code-refactoring@claude-code-workflows
-claude plugin install --scope local unit-testing@claude-code-workflows
-claude plugin install --scope local debugging-toolkit@claude-code-workflows
-claude plugin install --scope local error-debugging@claude-code-workflows
-claude plugin install --scope local security-scanning@claude-code-workflows
+# claude plugin install --scope local comprehensive-review@claude-code-workflows
+# claude plugin install --scope local code-refactoring@claude-code-workflows
+# claude plugin install --scope local unit-testing@claude-code-workflows
+# claude plugin install --scope local debugging-toolkit@claude-code-workflows
+# claude plugin install --scope local error-debugging@claude-code-workflows
+# claude plugin install --scope local security-scanning@claude-code-workflows
 
 
 # Skills
