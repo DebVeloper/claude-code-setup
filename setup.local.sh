@@ -106,17 +106,17 @@ EOF
 
 
 # Skills
-npx skills add https://github.com/softaworks/agent-toolkit --skill session-handoff
-npx skills add https://github.com/softaworks/agent-toolkit --skill mermaid-diagrams
-# npx skills add https://github.com/softaworks/agent-toolkit --skill gemini
-# npx skills add https://github.com/softaworks/agent-toolkit --skill codex
+npx skills add https://github.com/softaworks/agent-toolkit --skill session-handoff --agent claude-code -y
+npx skills add https://github.com/softaworks/agent-toolkit --skill mermaid-diagrams --agent claude-code -y
+# npx skills add https://github.com/softaworks/agent-toolkit --skill gemini --agent claude-code -y
+# npx skills add https://github.com/softaworks/agent-toolkit --skill codex --agent claude-code -y
 
-npx skills add https://github.com/supabase/agent-skills --skill supabase-postgres-best-practices
+npx skills add https://github.com/supabase/agent-skills --skill supabase-postgres-best-practices --agent claude-code -y
 
-npx skills add https://github.com/anthropics/skills --skill frontend-design
-npx skills add https://github.com/vercel-labs/agent-skills --skill vercel-react-best-practices
-npx skills add https://github.com/vercel-labs/agent-skills --skill web-design-guidelines
-npx skills add https://github.com/vercel-labs/agent-browser --skill agent-browser
+npx skills add https://github.com/anthropics/skills --skill frontend-design --agent claude-code -y
+npx skills add https://github.com/vercel-labs/agent-skills --skill vercel-react-best-practices --agent claude-code -y
+npx skills add https://github.com/vercel-labs/agent-skills --skill web-design-guidelines --agent claude-code -y
+npx skills add https://github.com/vercel-labs/agent-browser --skill agent-browser --agent claude-code -y
 
 
 # Configuration in Claude CLI
