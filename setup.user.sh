@@ -29,7 +29,7 @@ claude plugin install --scope user oh-my-claudecode@omc
 
 
 # Configuration in Claude CLI
-#   /oh-my-claudecode:omc-setup
+#   /oh-my-claudecode:omc-setup global
 #   /oh-my-claudecode:hud focused
 #   /claude-hud:setup
 
