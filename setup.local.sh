@@ -88,6 +88,11 @@ EOF
 
 
 # Plugins
+claude plugin install --scope local context7@claude-plugins-official
+claude plugin install --scope local jdtls-lsp@claude-plugins-official
+claude plugin install --scope local pyright-lsp@claude-plugins-official
+claude plugin install --scope local typescript-lsp@claude-plugins-official
+
 # claude plugin install --scope local oh-my-claudecode@omc
 
 # claude plugin install --scope local backend-development@claude-code-workflows
@@ -120,7 +125,7 @@ npx skills add https://github.com/vercel-labs/agent-browser --skill agent-browse
 
 
 # Configuration in Claude CLI
-#   /oh-my-claudecode:omc-setup --local
+#   /oh-my-claudecode:omc-setup local
 
 
 # If you want to increase the token limit, add the following to environment variables in settings.local.json
