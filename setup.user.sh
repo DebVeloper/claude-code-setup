@@ -28,6 +28,10 @@ claude plugin install --scope user oh-my-claudecode@omc
 # claude plugin install --scope user claude-hud
 
 
+# Skills
+npx skills add https://github.com/vercel-labs/skills --skill find-skills -g --agent claude-code -y
+
+
 # Configuration in Claude CLI
 #   /oh-my-claudecode:omc-setup global
 #   /oh-my-claudecode:hud focused

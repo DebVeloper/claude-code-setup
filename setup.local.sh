@@ -15,8 +15,7 @@ cat <<EOF > ./.claude/settings.local.json
     "DISABLE_TELEMETRY": "1",
     "DISABLE_COST_WARNINGS": "1",
     "CLAUDE_BASH_MAINTAIN_PROJECT_WORKING_DIR": "1",
-    "USE_BUILTIN_RIPGREP": "1",
-    "CLAUDE_CODE_TASK_LIST_ID": "my-project claude"
+    "USE_BUILTIN_RIPGREP": "1"
   },
   "attribution": {
     "commit": "",
@@ -30,33 +29,27 @@ cat <<EOF > ./.claude/settings.local.json
       "Skill(session-handoff:*)",
       "Bash(pnpm:*)",
       "Bash(npm:*)",
-      "Bash(yarn:*)",
-      "Bash(node:*)",
-      "Bash(git:*)",
-      "Bash(docker:*)",
       "Bash(uv sync:*)",
-      "Bash(uv run python:*)",
-      "Bash(uv run pytest:*)",
-      "Bash(uv run ruff:*)",
+      "Bash(uv run:*)",
       "Bash(python:*)",
       "Bash(pip:*)",
-      "Read(**/*.json)",
       "Read(**/*.js)",
       "Read(**/*.ts)",
       "Read(**/*.py)",
+      "Read(**/*.json)",
       "Edit(**/*.js)",
       "Edit(**/*.ts)",
       "Edit(**/*.py)",
       "Edit(**/*.json)",
       "Write(**/*.js)",
       "Write(**/*.ts)",
-      "Write(**/*.py)"
+      "Write(**/*.py)",
+      "Write(**/*.json)"
     ],
     "deny": [
-      "Read(./.env*)",
-      "Read(./secrets/**)",
+      "Bash(sudo:*)",
       "Bash(rm -rf:*)",
-      "Bash(sudo:*)"
+      "Read(./secrets/**)"
     ],
     "defaultMode": "default"
   }
@@ -74,6 +67,7 @@ cat <<EOF >> ./.gitignore
 .opencode/
 .windsurf/
 .omc/
+.sisyphus/
 EOF
 
 # cat <<EOF >> ./CLAUDE.md
