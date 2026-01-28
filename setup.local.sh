@@ -39,6 +39,10 @@ cat <<EOF > ./.claude/settings.local.json
       "Edit(**/*.ts)",
       "Write(**/*.js)",
       "Write(**/*.ts)",
+      "Bash(./gradlew clean:*)",
+      "Bash(./gradlew compileJava:*)",
+      "Bash(./gradlew test:*)",
+      "Bash(./gradlew build:*)",
       "Read(**/*.java)",
       "Edit(**/*.java)",
       "Write(**/*.java)"
