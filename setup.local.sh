@@ -80,7 +80,7 @@ claude plugin install --scope local typescript-lsp@claude-plugins-official
 # Backend
 claude plugin install --scope local backend-development@claude-code-workflows # Agent: 'backend-architect'
 claude plugin install --scope local python-development@claude-code-workflows # Agent: 'fastapi-pro'
-npx skills add https://github.com/sickn33/antigravity-awesome-skills --skill python-patterns -g --agent claude-code -y # Skill: '/python-patterns'
+npx skills add https://github.com/sickn33/antigravity-awesome-skills --skill python-patterns --agent claude-code -y # Skill: '/python-patterns'
 npx skills add https://github.com/supabase/agent-skills --skill supabase-postgres-best-practices --agent claude-code -y # Skill: '/supabase-postgres-best-practices'
 
 
